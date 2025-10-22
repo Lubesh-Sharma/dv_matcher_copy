@@ -1,0 +1,103 @@
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/torch/cuda/__init__.py:628: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Using cache found in /home/du2/22CS30065/.cache/torch/hub/mhamilton723_FeatUp_main
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/featup/featurizers/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/featup/featurizers/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/featup/featurizers/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Using cache found in /home/du2/22CS30065/.cache/torch/hub/facebookresearch_dinov2_main
+/home/du2/22CS30065/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/du2/22CS30065/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/du2/22CS30065/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+using dataset cache path: data/scape_partial/cache_scape_partial_test.pt
+  --> loading dataset from cache
+0it [00:00, ?it/s]/home/du2/22CS30065/DV-Matcher/models/model.py:648: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:275.)
+  img_norm = torch.tensor(img_norm).permute(0,3,1,2).to(device)
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/torch/functional.py:507: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3549.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+1it [00:07,  7.59s/it]2it [00:09,  4.38s/it]3it [00:11,  3.34s/it]4it [00:13,  2.85s/it]5it [00:16,  2.65s/it]6it [00:18,  2.65s/it]7it [00:21,  2.61s/it]8it [00:23,  2.48s/it]9it [00:25,  2.36s/it]10it [00:27,  2.30s/it]11it [00:29,  2.24s/it]12it [00:32,  2.20s/it]13it [00:34,  2.17s/it]14it [00:36,  2.15s/it]15it [00:38,  2.16s/it]16it [00:40,  2.15s/it]17it [00:42,  2.14s/it]18it [00:44,  2.12s/it]19it [00:46,  2.13s/it]20it [00:49,  2.13s/it]20it [00:49,  2.45s/it]
+mesh052
+mesh052
+mesh052
+mesh052
+mesh052
+mesh053
+mesh052
+mesh053
+mesh052
+mesh054
+mesh052
+mesh054
+mesh052
+mesh055
+mesh052
+mesh055
+mesh052
+mesh056
+mesh052
+mesh056
+mesh052
+mesh057
+mesh052
+mesh057
+mesh052
+mesh058
+mesh052
+mesh058
+mesh052
+mesh059
+mesh052
+mesh059
+mesh052
+mesh060
+mesh052
+mesh060
+mesh052
+mesh061
+mesh052
+mesh061
+mesh052
+mesh062
+mesh052
+mesh062
+mesh052
+mesh063
+mesh052
+mesh063
+mesh052
+mesh064
+mesh052
+mesh064
+mesh052
+mesh065
+mesh052
+mesh065
+mesh052
+mesh066
+mesh052
+mesh066
+mesh052
+mesh067
+mesh052
+mesh067
+mesh052
+mesh068
+mesh052
+mesh068
+mesh052
+mesh069
+mesh052
+mesh069
+mesh052
+mesh070
+mesh052
+mesh070
+mesh052
+mesh071
+mesh052
+mesh071

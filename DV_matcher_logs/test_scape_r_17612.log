@@ -1,0 +1,1546 @@
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/torch/cuda/__init__.py:628: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Using cache found in /home/du2/22CS30065/.cache/torch/hub/mhamilton723_FeatUp_main
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/featup/featurizers/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/featup/featurizers/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/featup/featurizers/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Using cache found in /home/du2/22CS30065/.cache/torch/hub/facebookresearch_dinov2_main
+/home/du2/22CS30065/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/du2/22CS30065/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/du2/22CS30065/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+using dataset cache path: data/scape_r/cache_scape_r_test_test.pt
+  --> dataset not in cache, repopulating
+  0%|          | 0/20 [00:00<?, ?it/s]/home/du2/22CS30065/DV-Matcher/models/model.py:884: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:275.)
+  img_norm = torch.tensor(img_norm).permute(0,3,1,2).to(device)
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/torch/functional.py:507: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3549.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+  5%|▌         | 1/20 [00:11<03:32, 11.20s/it] 10%|█         | 2/20 [00:13<01:51,  6.20s/it] 15%|█▌        | 3/20 [00:15<01:12,  4.24s/it] 20%|██        | 4/20 [00:19<01:05,  4.07s/it] 25%|██▌       | 5/20 [00:21<00:49,  3.29s/it] 30%|███       | 6/20 [00:23<00:39,  2.81s/it] 35%|███▌      | 7/20 [00:25<00:32,  2.49s/it] 40%|████      | 8/20 [00:27<00:27,  2.29s/it] 45%|████▌     | 9/20 [00:29<00:26,  2.39s/it] 50%|█████     | 10/20 [00:31<00:22,  2.23s/it] 55%|█████▌    | 11/20 [00:33<00:18,  2.11s/it] 60%|██████    | 12/20 [00:35<00:16,  2.05s/it] 65%|██████▌   | 13/20 [00:37<00:13,  1.98s/it] 70%|███████   | 14/20 [00:40<00:14,  2.49s/it] 75%|███████▌  | 15/20 [00:42<00:11,  2.31s/it] 80%|████████  | 16/20 [00:44<00:08,  2.17s/it] 85%|████████▌ | 17/20 [00:46<00:06,  2.08s/it] 90%|█████████ | 18/20 [00:48<00:04,  2.00s/it] 95%|█████████▌| 19/20 [00:50<00:02,  2.13s/it]100%|██████████| 20/20 [00:52<00:00,  2.03s/it]100%|██████████| 20/20 [00:52<00:00,  2.62s/it]
+Using cache found in /home/du2/22CS30065/.cache/torch/hub/mhamilton723_FeatUp_main
+Using cache found in /home/du2/22CS30065/.cache/torch/hub/facebookresearch_dinov2_main
+0it [00:00, ?it/s]1it [00:01,  1.98s/it]2it [00:03,  1.48s/it]3it [00:04,  1.32s/it]4it [00:07,  1.94s/it]5it [00:08,  1.65s/it]6it [00:09,  1.47s/it]7it [00:10,  1.36s/it]8it [00:11,  1.39s/it]9it [00:13,  1.35s/it]10it [00:14,  1.28s/it]11it [00:15,  1.25s/it]12it [00:16,  1.22s/it]13it [00:19,  1.55s/it]14it [00:20,  1.45s/it]15it [00:21,  1.36s/it]16it [00:22,  1.30s/it]17it [00:23,  1.25s/it]18it [00:24,  1.21s/it]19it [00:25,  1.18s/it]20it [00:27,  1.20s/it]21it [00:29,  1.42s/it]22it [00:30,  1.38s/it]23it [00:32,  1.60s/it]24it [00:33,  1.46s/it]25it [00:34,  1.37s/it]26it [00:35,  1.30s/it]27it [00:37,  1.25s/it]28it [00:38,  1.22s/it]29it [00:40,  1.54s/it]30it [00:41,  1.44s/it]31it [00:42,  1.36s/it]32it [00:44,  1.30s/it]33it [00:46,  1.51s/it]34it [00:48,  1.85s/it]35it [00:49,  1.66s/it]36it [00:51,  1.51s/it]37it [00:52,  1.41s/it]38it [00:53,  1.33s/it]39it [00:54,  1.28s/it]40it [00:55,  1.25s/it]41it [00:56,  1.21s/it]42it [00:58,  1.41s/it]43it [01:00,  1.67s/it]44it [01:02,  1.53s/it]45it [01:03,  1.44s/it]46it [01:04,  1.37s/it]47it [01:05,  1.31s/it]48it [01:06,  1.26s/it]49it [01:08,  1.22s/it]50it [01:09,  1.20s/it]51it [01:11,  1.40s/it]52it [01:12,  1.32s/it]53it [01:13,  1.27s/it]54it [01:14,  1.24s/it]55it [01:15,  1.21s/it]56it [01:16,  1.19s/it]57it [01:17,  1.18s/it]58it [01:19,  1.18s/it]59it [01:20,  1.18s/it]60it [01:21,  1.18s/it]61it [01:23,  1.38s/it]62it [01:25,  1.67s/it]63it [01:26,  1.52s/it]64it [01:28,  1.41s/it]65it [01:29,  1.34s/it]66it [01:31,  1.49s/it]67it [01:33,  1.76s/it]68it [01:34,  1.59s/it]69it [01:35,  1.45s/it]70it [01:36,  1.37s/it]71it [01:38,  1.31s/it]72it [01:39,  1.27s/it]73it [01:40,  1.24s/it]74it [01:41,  1.21s/it]75it [01:43,  1.40s/it]76it [01:44,  1.32s/it]77it [01:45,  1.28s/it]78it [01:46,  1.26s/it]79it [01:48,  1.23s/it]80it [01:49,  1.23s/it]81it [01:50,  1.21s/it]82it [01:51,  1.19s/it]83it [01:53,  1.37s/it]84it [01:55,  1.50s/it]85it [01:56,  1.46s/it]86it [01:57,  1.37s/it]87it [01:58,  1.31s/it]88it [02:00,  1.47s/it]89it [02:01,  1.37s/it]90it [02:03,  1.31s/it]91it [02:04,  1.26s/it]92it [02:05,  1.22s/it]93it [02:06,  1.20s/it]94it [02:07,  1.19s/it]95it [02:08,  1.18s/it]96it [02:10,  1.19s/it]97it [02:11,  1.19s/it]98it [02:14,  1.71s/it]99it [02:15,  1.56s/it]100it [02:16,  1.45s/it]101it [02:17,  1.36s/it]102it [02:18,  1.29s/it]103it [02:20,  1.27s/it]104it [02:21,  1.24s/it]105it [02:22,  1.22s/it]106it [02:24,  1.41s/it]107it [02:25,  1.34s/it]108it [02:26,  1.29s/it]109it [02:27,  1.25s/it]110it [02:28,  1.22s/it]111it [02:30,  1.20s/it]112it [02:31,  1.18s/it]113it [02:32,  1.18s/it]114it [02:33,  1.17s/it]115it [02:37,  1.90s/it]116it [02:38,  1.68s/it]117it [02:39,  1.53s/it]118it [02:42,  1.94s/it]119it [02:43,  1.71s/it]120it [02:44,  1.56s/it]121it [02:45,  1.44s/it]122it [02:47,  1.37s/it]123it [02:48,  1.30s/it]124it [02:49,  1.26s/it]125it [02:50,  1.23s/it]126it [02:52,  1.43s/it]127it [02:53,  1.35s/it]128it [02:54,  1.29s/it]129it [02:55,  1.24s/it]130it [02:57,  1.20s/it]131it [02:58,  1.18s/it]132it [02:59,  1.20s/it]133it [03:00,  1.20s/it]134it [03:02,  1.44s/it]135it [03:04,  1.59s/it]136it [03:05,  1.47s/it]137it [03:06,  1.38s/it]138it [03:08,  1.32s/it]139it [03:09,  1.28s/it]140it [03:10,  1.26s/it]141it [03:11,  1.22s/it]142it [03:12,  1.21s/it]143it [03:15,  1.72s/it]144it [03:16,  1.54s/it]145it [03:17,  1.41s/it]146it [03:19,  1.32s/it]147it [03:20,  1.26s/it]148it [03:21,  1.22s/it]149it [03:22,  1.19s/it]150it [03:23,  1.18s/it]151it [03:26,  1.84s/it]152it [03:28,  1.84s/it]153it [03:29,  1.64s/it]154it [03:31,  1.51s/it]155it [03:32,  1.41s/it]156it [03:36,  2.16s/it]157it [03:37,  1.87s/it]158it [03:38,  1.68s/it]159it [03:39,  1.54s/it]160it [03:41,  1.44s/it]161it [03:42,  1.35s/it]162it [03:43,  1.29s/it]163it [03:44,  1.25s/it]164it [03:45,  1.23s/it]165it [03:46,  1.20s/it]166it [03:48,  1.18s/it]167it [03:49,  1.17s/it]168it [03:50,  1.17s/it]169it [03:51,  1.16s/it]170it [03:52,  1.15s/it]171it [03:53,  1.15s/it]172it [03:54,  1.15s/it]173it [03:56,  1.16s/it]174it [03:57,  1.39s/it]175it [03:59,  1.33s/it]176it [04:00,  1.28s/it]177it [04:01,  1.25s/it]178it [04:02,  1.22s/it]179it [04:04,  1.26s/it]180it [04:05,  1.23s/it]181it [04:06,  1.20s/it]182it [04:07,  1.19s/it]183it [04:09,  1.38s/it]184it [04:11,  1.63s/it]185it [04:12,  1.48s/it]186it [04:13,  1.39s/it]187it [04:14,  1.31s/it]188it [04:16,  1.26s/it]189it [04:17,  1.24s/it]190it [04:18,  1.21s/it]191it [04:19,  1.20s/it]192it [04:20,  1.20s/it]193it [04:21,  1.19s/it]194it [04:23,  1.20s/it]195it [04:24,  1.21s/it]196it [04:25,  1.20s/it]197it [04:26,  1.19s/it]198it [04:27,  1.18s/it]199it [04:29,  1.38s/it]200it [04:31,  1.54s/it]201it [04:32,  1.42s/it]202it [04:33,  1.34s/it]203it [04:35,  1.28s/it]204it [04:36,  1.25s/it]205it [04:37,  1.24s/it]206it [04:38,  1.20s/it]207it [04:39,  1.18s/it]208it [04:40,  1.17s/it]209it [04:42,  1.17s/it]210it [04:43,  1.17s/it]211it [04:44,  1.17s/it]212it [04:45,  1.18s/it]213it [04:46,  1.17s/it]214it [04:47,  1.17s/it]215it [04:49,  1.18s/it]216it [04:50,  1.17s/it]217it [04:51,  1.18s/it]218it [04:52,  1.18s/it]219it [04:53,  1.21s/it]220it [04:55,  1.25s/it]221it [04:56,  1.37s/it]222it [04:59,  1.86s/it]223it [05:01,  1.64s/it]224it [05:02,  1.50s/it]225it [05:03,  1.39s/it]226it [05:05,  1.56s/it]227it [05:06,  1.43s/it]228it [05:07,  1.35s/it]229it [05:08,  1.29s/it]230it [05:09,  1.26s/it]231it [05:11,  1.24s/it]232it [05:12,  1.22s/it]233it [05:13,  1.21s/it]234it [05:15,  1.40s/it]235it [05:17,  1.57s/it]236it [05:18,  1.45s/it]237it [05:19,  1.36s/it]238it [05:20,  1.30s/it]239it [05:22,  1.49s/it]240it [05:23,  1.39s/it]241it [05:25,  1.31s/it]242it [05:26,  1.27s/it]243it [05:27,  1.25s/it]244it [05:28,  1.21s/it]245it [05:29,  1.19s/it]246it [05:30,  1.19s/it]247it [05:32,  1.39s/it]248it [05:35,  1.67s/it]249it [05:36,  1.51s/it]250it [05:37,  1.40s/it]251it [05:38,  1.34s/it]252it [05:39,  1.29s/it]253it [05:40,  1.26s/it]254it [05:42,  1.26s/it]255it [05:43,  1.23s/it]256it [05:45,  1.47s/it]257it [05:46,  1.39s/it]258it [05:47,  1.33s/it]259it [05:48,  1.28s/it]260it [05:50,  1.26s/it]261it [05:51,  1.22s/it]262it [05:52,  1.20s/it]263it [05:53,  1.18s/it]264it [05:56,  1.69s/it]265it [05:57,  1.53s/it]266it [05:58,  1.42s/it]267it [05:59,  1.34s/it]268it [06:01,  1.29s/it]269it [06:02,  1.25s/it]270it [06:03,  1.22s/it]271it [06:04,  1.21s/it]272it [06:07,  1.76s/it]273it [06:08,  1.58s/it]274it [06:09,  1.45s/it]275it [06:11,  1.37s/it]276it [06:12,  1.31s/it]277it [06:13,  1.27s/it]278it [06:14,  1.23s/it]279it [06:15,  1.21s/it]280it [06:18,  1.76s/it]281it [06:20,  1.59s/it]282it [06:21,  1.45s/it]283it [06:22,  1.36s/it]284it [06:23,  1.29s/it]285it [06:24,  1.24s/it]286it [06:25,  1.23s/it]287it [06:26,  1.21s/it]288it [06:30,  1.77s/it]289it [06:31,  1.60s/it]290it [06:32,  1.48s/it]291it [06:33,  1.39s/it]292it [06:34,  1.35s/it]293it [06:36,  1.31s/it]294it [06:37,  1.29s/it]295it [06:38,  1.25s/it]296it [06:40,  1.47s/it]297it [06:42,  1.63s/it]298it [06:43,  1.50s/it]299it [06:44,  1.40s/it]300it [06:46,  1.34s/it]301it [06:47,  1.52s/it]302it [06:49,  1.41s/it]303it [06:50,  1.33s/it]304it [06:51,  1.27s/it]305it [06:52,  1.24s/it]306it [06:53,  1.25s/it]307it [06:54,  1.22s/it]308it [06:56,  1.21s/it]309it [06:59,  1.74s/it]310it [07:00,  1.57s/it]311it [07:01,  1.45s/it]312it [07:02,  1.39s/it]313it [07:03,  1.33s/it]314it [07:05,  1.27s/it]315it [07:06,  1.24s/it]316it [07:07,  1.22s/it]317it [07:09,  1.44s/it]318it [07:10,  1.35s/it]319it [07:11,  1.29s/it]320it [07:12,  1.26s/it]321it [07:13,  1.22s/it]322it [07:15,  1.20s/it]323it [07:16,  1.19s/it]324it [07:17,  1.19s/it]325it [07:19,  1.42s/it]326it [07:23,  2.10s/it]327it [07:24,  1.82s/it]328it [07:25,  1.63s/it]329it [07:26,  1.50s/it]330it [07:27,  1.40s/it]331it [07:28,  1.33s/it]332it [07:30,  1.27s/it]333it [07:31,  1.24s/it]334it [07:33,  1.44s/it]335it [07:34,  1.36s/it]336it [07:35,  1.30s/it]337it [07:36,  1.26s/it]338it [07:39,  1.77s/it]339it [07:40,  1.60s/it]340it [07:42,  1.47s/it]341it [07:43,  1.37s/it]342it [07:44,  1.31s/it]343it [07:45,  1.27s/it]344it [07:46,  1.24s/it]345it [07:47,  1.23s/it]346it [07:50,  1.79s/it]347it [07:52,  1.62s/it]348it [07:53,  1.49s/it]349it [07:54,  1.39s/it]350it [07:55,  1.32s/it]351it [07:56,  1.28s/it]352it [07:58,  1.25s/it]353it [07:59,  1.23s/it]354it [08:01,  1.43s/it]355it [08:02,  1.37s/it]356it [08:03,  1.31s/it]357it [08:04,  1.28s/it]358it [08:05,  1.24s/it]359it [08:07,  1.22s/it]360it [08:08,  1.20s/it]361it [08:09,  1.21s/it]362it [08:12,  1.74s/it]363it [08:13,  1.58s/it]364it [08:14,  1.45s/it]365it [08:15,  1.37s/it]366it [08:17,  1.31s/it]367it [08:18,  1.28s/it]368it [08:19,  1.25s/it]369it [08:20,  1.22s/it]370it [08:23,  1.75s/it]371it [08:24,  1.57s/it]372it [08:25,  1.45s/it]373it [08:27,  1.37s/it]374it [08:28,  1.31s/it]375it [08:29,  1.27s/it]376it [08:30,  1.24s/it]377it [08:31,  1.22s/it]378it [08:34,  1.72s/it]379it [08:35,  1.55s/it]380it [08:37,  1.44s/it]380it [08:37,  1.36s/it]
+0
+1
+mesh052
+mesh053
+0
+2
+mesh052
+mesh054
+0
+3
+mesh052
+mesh055
+0
+4
+mesh052
+mesh056
+0
+5
+mesh052
+mesh057
+0
+6
+mesh052
+mesh058
+0
+7
+mesh052
+mesh059
+0
+8
+mesh052
+mesh060
+0
+9
+mesh052
+mesh061
+0
+10
+mesh052
+mesh062
+0
+11
+mesh052
+mesh063
+0
+12
+mesh052
+mesh064
+0
+13
+mesh052
+mesh065
+0
+14
+mesh052
+mesh066
+0
+15
+mesh052
+mesh067
+0
+16
+mesh052
+mesh068
+0
+17
+mesh052
+mesh069
+0
+18
+mesh052
+mesh070
+0
+19
+mesh052
+mesh071
+1
+0
+mesh053
+mesh052
+1
+2
+mesh053
+mesh054
+1
+3
+mesh053
+mesh055
+1
+4
+mesh053
+mesh056
+1
+5
+mesh053
+mesh057
+1
+6
+mesh053
+mesh058
+1
+7
+mesh053
+mesh059
+1
+8
+mesh053
+mesh060
+1
+9
+mesh053
+mesh061
+1
+10
+mesh053
+mesh062
+1
+11
+mesh053
+mesh063
+1
+12
+mesh053
+mesh064
+1
+13
+mesh053
+mesh065
+1
+14
+mesh053
+mesh066
+1
+15
+mesh053
+mesh067
+1
+16
+mesh053
+mesh068
+1
+17
+mesh053
+mesh069
+1
+18
+mesh053
+mesh070
+1
+19
+mesh053
+mesh071
+2
+0
+mesh054
+mesh052
+2
+1
+mesh054
+mesh053
+2
+3
+mesh054
+mesh055
+2
+4
+mesh054
+mesh056
+2
+5
+mesh054
+mesh057
+2
+6
+mesh054
+mesh058
+2
+7
+mesh054
+mesh059
+2
+8
+mesh054
+mesh060
+2
+9
+mesh054
+mesh061
+2
+10
+mesh054
+mesh062
+2
+11
+mesh054
+mesh063
+2
+12
+mesh054
+mesh064
+2
+13
+mesh054
+mesh065
+2
+14
+mesh054
+mesh066
+2
+15
+mesh054
+mesh067
+2
+16
+mesh054
+mesh068
+2
+17
+mesh054
+mesh069
+2
+18
+mesh054
+mesh070
+2
+19
+mesh054
+mesh071
+3
+0
+mesh055
+mesh052
+3
+1
+mesh055
+mesh053
+3
+2
+mesh055
+mesh054
+3
+4
+mesh055
+mesh056
+3
+5
+mesh055
+mesh057
+3
+6
+mesh055
+mesh058
+3
+7
+mesh055
+mesh059
+3
+8
+mesh055
+mesh060
+3
+9
+mesh055
+mesh061
+3
+10
+mesh055
+mesh062
+3
+11
+mesh055
+mesh063
+3
+12
+mesh055
+mesh064
+3
+13
+mesh055
+mesh065
+3
+14
+mesh055
+mesh066
+3
+15
+mesh055
+mesh067
+3
+16
+mesh055
+mesh068
+3
+17
+mesh055
+mesh069
+3
+18
+mesh055
+mesh070
+3
+19
+mesh055
+mesh071
+4
+0
+mesh056
+mesh052
+4
+1
+mesh056
+mesh053
+4
+2
+mesh056
+mesh054
+4
+3
+mesh056
+mesh055
+4
+5
+mesh056
+mesh057
+4
+6
+mesh056
+mesh058
+4
+7
+mesh056
+mesh059
+4
+8
+mesh056
+mesh060
+4
+9
+mesh056
+mesh061
+4
+10
+mesh056
+mesh062
+4
+11
+mesh056
+mesh063
+4
+12
+mesh056
+mesh064
+4
+13
+mesh056
+mesh065
+4
+14
+mesh056
+mesh066
+4
+15
+mesh056
+mesh067
+4
+16
+mesh056
+mesh068
+4
+17
+mesh056
+mesh069
+4
+18
+mesh056
+mesh070
+4
+19
+mesh056
+mesh071
+5
+0
+mesh057
+mesh052
+5
+1
+mesh057
+mesh053
+5
+2
+mesh057
+mesh054
+5
+3
+mesh057
+mesh055
+5
+4
+mesh057
+mesh056
+5
+6
+mesh057
+mesh058
+5
+7
+mesh057
+mesh059
+5
+8
+mesh057
+mesh060
+5
+9
+mesh057
+mesh061
+5
+10
+mesh057
+mesh062
+5
+11
+mesh057
+mesh063
+5
+12
+mesh057
+mesh064
+5
+13
+mesh057
+mesh065
+5
+14
+mesh057
+mesh066
+5
+15
+mesh057
+mesh067
+5
+16
+mesh057
+mesh068
+5
+17
+mesh057
+mesh069
+5
+18
+mesh057
+mesh070
+5
+19
+mesh057
+mesh071
+6
+0
+mesh058
+mesh052
+6
+1
+mesh058
+mesh053
+6
+2
+mesh058
+mesh054
+6
+3
+mesh058
+mesh055
+6
+4
+mesh058
+mesh056
+6
+5
+mesh058
+mesh057
+6
+7
+mesh058
+mesh059
+6
+8
+mesh058
+mesh060
+6
+9
+mesh058
+mesh061
+6
+10
+mesh058
+mesh062
+6
+11
+mesh058
+mesh063
+6
+12
+mesh058
+mesh064
+6
+13
+mesh058
+mesh065
+6
+14
+mesh058
+mesh066
+6
+15
+mesh058
+mesh067
+6
+16
+mesh058
+mesh068
+6
+17
+mesh058
+mesh069
+6
+18
+mesh058
+mesh070
+6
+19
+mesh058
+mesh071
+7
+0
+mesh059
+mesh052
+7
+1
+mesh059
+mesh053
+7
+2
+mesh059
+mesh054
+7
+3
+mesh059
+mesh055
+7
+4
+mesh059
+mesh056
+7
+5
+mesh059
+mesh057
+7
+6
+mesh059
+mesh058
+7
+8
+mesh059
+mesh060
+7
+9
+mesh059
+mesh061
+7
+10
+mesh059
+mesh062
+7
+11
+mesh059
+mesh063
+7
+12
+mesh059
+mesh064
+7
+13
+mesh059
+mesh065
+7
+14
+mesh059
+mesh066
+7
+15
+mesh059
+mesh067
+7
+16
+mesh059
+mesh068
+7
+17
+mesh059
+mesh069
+7
+18
+mesh059
+mesh070
+7
+19
+mesh059
+mesh071
+8
+0
+mesh060
+mesh052
+8
+1
+mesh060
+mesh053
+8
+2
+mesh060
+mesh054
+8
+3
+mesh060
+mesh055
+8
+4
+mesh060
+mesh056
+8
+5
+mesh060
+mesh057
+8
+6
+mesh060
+mesh058
+8
+7
+mesh060
+mesh059
+8
+9
+mesh060
+mesh061
+8
+10
+mesh060
+mesh062
+8
+11
+mesh060
+mesh063
+8
+12
+mesh060
+mesh064
+8
+13
+mesh060
+mesh065
+8
+14
+mesh060
+mesh066
+8
+15
+mesh060
+mesh067
+8
+16
+mesh060
+mesh068
+8
+17
+mesh060
+mesh069
+8
+18
+mesh060
+mesh070
+8
+19
+mesh060
+mesh071
+9
+0
+mesh061
+mesh052
+9
+1
+mesh061
+mesh053
+9
+2
+mesh061
+mesh054
+9
+3
+mesh061
+mesh055
+9
+4
+mesh061
+mesh056
+9
+5
+mesh061
+mesh057
+9
+6
+mesh061
+mesh058
+9
+7
+mesh061
+mesh059
+9
+8
+mesh061
+mesh060
+9
+10
+mesh061
+mesh062
+9
+11
+mesh061
+mesh063
+9
+12
+mesh061
+mesh064
+9
+13
+mesh061
+mesh065
+9
+14
+mesh061
+mesh066
+9
+15
+mesh061
+mesh067
+9
+16
+mesh061
+mesh068
+9
+17
+mesh061
+mesh069
+9
+18
+mesh061
+mesh070
+9
+19
+mesh061
+mesh071
+10
+0
+mesh062
+mesh052
+10
+1
+mesh062
+mesh053
+10
+2
+mesh062
+mesh054
+10
+3
+mesh062
+mesh055
+10
+4
+mesh062
+mesh056
+10
+5
+mesh062
+mesh057
+10
+6
+mesh062
+mesh058
+10
+7
+mesh062
+mesh059
+10
+8
+mesh062
+mesh060
+10
+9
+mesh062
+mesh061
+10
+11
+mesh062
+mesh063
+10
+12
+mesh062
+mesh064
+10
+13
+mesh062
+mesh065
+10
+14
+mesh062
+mesh066
+10
+15
+mesh062
+mesh067
+10
+16
+mesh062
+mesh068
+10
+17
+mesh062
+mesh069
+10
+18
+mesh062
+mesh070
+10
+19
+mesh062
+mesh071
+11
+0
+mesh063
+mesh052
+11
+1
+mesh063
+mesh053
+11
+2
+mesh063
+mesh054
+11
+3
+mesh063
+mesh055
+11
+4
+mesh063
+mesh056
+11
+5
+mesh063
+mesh057
+11
+6
+mesh063
+mesh058
+11
+7
+mesh063
+mesh059
+11
+8
+mesh063
+mesh060
+11
+9
+mesh063
+mesh061
+11
+10
+mesh063
+mesh062
+11
+12
+mesh063
+mesh064
+11
+13
+mesh063
+mesh065
+11
+14
+mesh063
+mesh066
+11
+15
+mesh063
+mesh067
+11
+16
+mesh063
+mesh068
+11
+17
+mesh063
+mesh069
+11
+18
+mesh063
+mesh070
+11
+19
+mesh063
+mesh071
+12
+0
+mesh064
+mesh052
+12
+1
+mesh064
+mesh053
+12
+2
+mesh064
+mesh054
+12
+3
+mesh064
+mesh055
+12
+4
+mesh064
+mesh056
+12
+5
+mesh064
+mesh057
+12
+6
+mesh064
+mesh058
+12
+7
+mesh064
+mesh059
+12
+8
+mesh064
+mesh060
+12
+9
+mesh064
+mesh061
+12
+10
+mesh064
+mesh062
+12
+11
+mesh064
+mesh063
+12
+13
+mesh064
+mesh065
+12
+14
+mesh064
+mesh066
+12
+15
+mesh064
+mesh067
+12
+16
+mesh064
+mesh068
+12
+17
+mesh064
+mesh069
+12
+18
+mesh064
+mesh070
+12
+19
+mesh064
+mesh071
+13
+0
+mesh065
+mesh052
+13
+1
+mesh065
+mesh053
+13
+2
+mesh065
+mesh054
+13
+3
+mesh065
+mesh055
+13
+4
+mesh065
+mesh056
+13
+5
+mesh065
+mesh057
+13
+6
+mesh065
+mesh058
+13
+7
+mesh065
+mesh059
+13
+8
+mesh065
+mesh060
+13
+9
+mesh065
+mesh061
+13
+10
+mesh065
+mesh062
+13
+11
+mesh065
+mesh063
+13
+12
+mesh065
+mesh064
+13
+14
+mesh065
+mesh066
+13
+15
+mesh065
+mesh067
+13
+16
+mesh065
+mesh068
+13
+17
+mesh065
+mesh069
+13
+18
+mesh065
+mesh070
+13
+19
+mesh065
+mesh071
+14
+0
+mesh066
+mesh052
+14
+1
+mesh066
+mesh053
+14
+2
+mesh066
+mesh054
+14
+3
+mesh066
+mesh055
+14
+4
+mesh066
+mesh056
+14
+5
+mesh066
+mesh057
+14
+6
+mesh066
+mesh058
+14
+7
+mesh066
+mesh059
+14
+8
+mesh066
+mesh060
+14
+9
+mesh066
+mesh061
+14
+10
+mesh066
+mesh062
+14
+11
+mesh066
+mesh063
+14
+12
+mesh066
+mesh064
+14
+13
+mesh066
+mesh065
+14
+15
+mesh066
+mesh067
+14
+16
+mesh066
+mesh068
+14
+17
+mesh066
+mesh069
+14
+18
+mesh066
+mesh070
+14
+19
+mesh066
+mesh071
+15
+0
+mesh067
+mesh052
+15
+1
+mesh067
+mesh053
+15
+2
+mesh067
+mesh054
+15
+3
+mesh067
+mesh055
+15
+4
+mesh067
+mesh056
+15
+5
+mesh067
+mesh057
+15
+6
+mesh067
+mesh058
+15
+7
+mesh067
+mesh059
+15
+8
+mesh067
+mesh060
+15
+9
+mesh067
+mesh061
+15
+10
+mesh067
+mesh062
+15
+11
+mesh067
+mesh063
+15
+12
+mesh067
+mesh064
+15
+13
+mesh067
+mesh065
+15
+14
+mesh067
+mesh066
+15
+16
+mesh067
+mesh068
+15
+17
+mesh067
+mesh069
+15
+18
+mesh067
+mesh070
+15
+19
+mesh067
+mesh071
+16
+0
+mesh068
+mesh052
+16
+1
+mesh068
+mesh053
+16
+2
+mesh068
+mesh054
+16
+3
+mesh068
+mesh055
+16
+4
+mesh068
+mesh056
+16
+5
+mesh068
+mesh057
+16
+6
+mesh068
+mesh058
+16
+7
+mesh068
+mesh059
+16
+8
+mesh068
+mesh060
+16
+9
+mesh068
+mesh061
+16
+10
+mesh068
+mesh062
+16
+11
+mesh068
+mesh063
+16
+12
+mesh068
+mesh064
+16
+13
+mesh068
+mesh065
+16
+14
+mesh068
+mesh066
+16
+15
+mesh068
+mesh067
+16
+17
+mesh068
+mesh069
+16
+18
+mesh068
+mesh070
+16
+19
+mesh068
+mesh071
+17
+0
+mesh069
+mesh052
+17
+1
+mesh069
+mesh053
+17
+2
+mesh069
+mesh054
+17
+3
+mesh069
+mesh055
+17
+4
+mesh069
+mesh056
+17
+5
+mesh069
+mesh057
+17
+6
+mesh069
+mesh058
+17
+7
+mesh069
+mesh059
+17
+8
+mesh069
+mesh060
+17
+9
+mesh069
+mesh061
+17
+10
+mesh069
+mesh062
+17
+11
+mesh069
+mesh063
+17
+12
+mesh069
+mesh064
+17
+13
+mesh069
+mesh065
+17
+14
+mesh069
+mesh066
+17
+15
+mesh069
+mesh067
+17
+16
+mesh069
+mesh068
+17
+18
+mesh069
+mesh070
+17
+19
+mesh069
+mesh071
+18
+0
+mesh070
+mesh052
+18
+1
+mesh070
+mesh053
+18
+2
+mesh070
+mesh054
+18
+3
+mesh070
+mesh055
+18
+4
+mesh070
+mesh056
+18
+5
+mesh070
+mesh057
+18
+6
+mesh070
+mesh058
+18
+7
+mesh070
+mesh059
+18
+8
+mesh070
+mesh060
+18
+9
+mesh070
+mesh061
+18
+10
+mesh070
+mesh062
+18
+11
+mesh070
+mesh063
+18
+12
+mesh070
+mesh064
+18
+13
+mesh070
+mesh065
+18
+14
+mesh070
+mesh066
+18
+15
+mesh070
+mesh067
+18
+16
+mesh070
+mesh068
+18
+17
+mesh070
+mesh069
+18
+19
+mesh070
+mesh071
+19
+0
+mesh071
+mesh052
+19
+1
+mesh071
+mesh053
+19
+2
+mesh071
+mesh054
+19
+3
+mesh071
+mesh055
+19
+4
+mesh071
+mesh056
+19
+5
+mesh071
+mesh057
+19
+6
+mesh071
+mesh058
+19
+7
+mesh071
+mesh059
+19
+8
+mesh071
+mesh060
+19
+9
+mesh071
+mesh061
+19
+10
+mesh071
+mesh062
+19
+11
+mesh071
+mesh063
+19
+12
+mesh071
+mesh064
+19
+13
+mesh071
+mesh065
+19
+14
+mesh071
+mesh066
+19
+15
+mesh071
+mesh067
+19
+16
+mesh071
+mesh068
+19
+17
+mesh071
+mesh069
+19
+18
+mesh071
+mesh070

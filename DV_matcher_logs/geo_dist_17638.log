@@ -1,0 +1,181 @@
+[geo_mat_scape_r] Processing 20 file(s) from data/scape_r/shapes_test
+[geo_mat_scape_r] nn=800, output=data/scape_r/geodist_test, overwrite=True
+  [1/20] start mesh052.off
+  [1/20] [ok] mesh052.off -> data/scape_r/geodist_test/mesh052.mat (took 12.11s)
+  [2/20] start mesh053.off
+  [2/20] [ok] mesh053.off -> data/scape_r/geodist_test/mesh053.mat (took 12.72s)
+  [3/20] start mesh054.off
+  [3/20] [ok] mesh054.off -> data/scape_r/geodist_test/mesh054.mat (took 12.94s)
+  [4/20] start mesh055.off
+  [4/20] [ok] mesh055.off -> data/scape_r/geodist_test/mesh055.mat (took 13.50s)
+  [5/20] start mesh056.off
+  [5/20] [ok] mesh056.off -> data/scape_r/geodist_test/mesh056.mat (took 12.92s)
+  [6/20] start mesh057.off
+  [6/20] [ok] mesh057.off -> data/scape_r/geodist_test/mesh057.mat (took 12.50s)
+  [7/20] start mesh058.off
+  [7/20] [ok] mesh058.off -> data/scape_r/geodist_test/mesh058.mat (took 11.45s)
+  [8/20] start mesh059.off
+  [8/20] [ok] mesh059.off -> data/scape_r/geodist_test/mesh059.mat (took 11.74s)
+  [9/20] start mesh060.off
+  [9/20] [ok] mesh060.off -> data/scape_r/geodist_test/mesh060.mat (took 12.01s)
+  [10/20] start mesh061.off
+  [10/20] [ok] mesh061.off -> data/scape_r/geodist_test/mesh061.mat (took 12.54s)
+  [11/20] start mesh062.off
+  [11/20] [ok] mesh062.off -> data/scape_r/geodist_test/mesh062.mat (took 12.17s)
+  [12/20] start mesh063.off
+  [12/20] [ok] mesh063.off -> data/scape_r/geodist_test/mesh063.mat (took 12.06s)
+  [13/20] start mesh064.off
+  [13/20] [ok] mesh064.off -> data/scape_r/geodist_test/mesh064.mat (took 11.99s)
+  [14/20] start mesh065.off
+  [14/20] [ok] mesh065.off -> data/scape_r/geodist_test/mesh065.mat (took 12.69s)
+  [15/20] start mesh066.off
+  [15/20] [ok] mesh066.off -> data/scape_r/geodist_test/mesh066.mat (took 12.62s)
+  [16/20] start mesh067.off
+  [16/20] [ok] mesh067.off -> data/scape_r/geodist_test/mesh067.mat (took 12.32s)
+  [17/20] start mesh068.off
+  [17/20] [ok] mesh068.off -> data/scape_r/geodist_test/mesh068.mat (took 12.72s)
+  [18/20] start mesh069.off
+  [18/20] [ok] mesh069.off -> data/scape_r/geodist_test/mesh069.mat (took 12.37s)
+  [19/20] start mesh070.off
+  [19/20] [ok] mesh070.off -> data/scape_r/geodist_test/mesh070.mat (took 12.53s)
+  [20/20] start mesh071.off
+  [20/20] [ok] mesh071.off -> data/scape_r/geodist_test/mesh071.mat (took 12.79s)
+[geo_mat_scape_r] Done. Processed 20 file(s) in 248.66s (avg 12.43s/file).
+[geo_mat_scape_r] Processing 35 file(s) from data/shrec_19/shapes_train
+[geo_mat_scape_r] nn=800, output=data/shrec_19/geodist_train, overwrite=True
+  [1/35] start 1.off
+  [1/35] [ok] 1.off -> data/shrec_19/geodist_train/1.mat (took 13.87s)
+  [2/35] start 10.off
+  [2/35] [ok] 10.off -> data/shrec_19/geodist_train/10.mat (took 13.57s)
+  [3/35] start 11.off
+  [3/35] [ok] 11.off -> data/shrec_19/geodist_train/11.mat (took 12.80s)
+  [4/35] start 12.off
+  [4/35] [ok] 12.off -> data/shrec_19/geodist_train/12.mat (took 12.83s)
+  [5/35] start 13.off
+  [5/35] [ok] 13.off -> data/shrec_19/geodist_train/13.mat (took 13.01s)
+  [6/35] start 14.off
+  [6/35] [ok] 14.off -> data/shrec_19/geodist_train/14.mat (took 12.98s)
+  [7/35] start 15.off
+  [7/35] [ok] 15.off -> data/shrec_19/geodist_train/15.mat (took 12.86s)
+  [8/35] start 16.off
+  [8/35] [ok] 16.off -> data/shrec_19/geodist_train/16.mat (took 12.88s)
+  [9/35] start 17.off
+  [9/35] [ok] 17.off -> data/shrec_19/geodist_train/17.mat (took 13.45s)
+  [10/35] start 18.off
+  [10/35] [ok] 18.off -> data/shrec_19/geodist_train/18.mat (took 13.70s)
+  [11/35] start 19.off
+  [11/35] [ok] 19.off -> data/shrec_19/geodist_train/19.mat (took 12.99s)
+  [12/35] start 2.off
+  [12/35] [ok] 2.off -> data/shrec_19/geodist_train/2.mat (took 13.20s)
+  [13/35] start 20.off
+  [13/35] [ok] 20.off -> data/shrec_19/geodist_train/20.mat (took 13.45s)
+  [14/35] start 21.off
+  [14/35] [ok] 21.off -> data/shrec_19/geodist_train/21.mat (took 13.45s)
+  [15/35] start 22.off
+  [15/35] [ok] 22.off -> data/shrec_19/geodist_train/22.mat (took 13.77s)
+  [16/35] start 23.off
+  [16/35] [ok] 23.off -> data/shrec_19/geodist_train/23.mat (took 13.55s)
+  [17/35] start 24.off
+  [17/35] [ok] 24.off -> data/shrec_19/geodist_train/24.mat (took 13.48s)
+  [18/35] start 25.off
+  [18/35] [ok] 25.off -> data/shrec_19/geodist_train/25.mat (took 13.66s)
+  [19/35] start 26.off
+  [19/35] [ok] 26.off -> data/shrec_19/geodist_train/26.mat (took 12.93s)
+  [20/35] start 27.off
+  [20/35] [ok] 27.off -> data/shrec_19/geodist_train/27.mat (took 14.70s)
+  [21/35] start 28.off
+  [21/35] [ok] 28.off -> data/shrec_19/geodist_train/28.mat (took 13.49s)
+  [22/35] start 29.off
+  [22/35] [ok] 29.off -> data/shrec_19/geodist_train/29.mat (took 13.67s)
+  [23/35] start 3.off
+  [23/35] [ok] 3.off -> data/shrec_19/geodist_train/3.mat (took 13.63s)
+  [24/35] start 30.off
+  [24/35] [ok] 30.off -> data/shrec_19/geodist_train/30.mat (took 13.13s)
+  [25/35] start 31.off
+  [25/35] [ok] 31.off -> data/shrec_19/geodist_train/31.mat (took 13.07s)
+  [26/35] start 32.off
+  [26/35] [ok] 32.off -> data/shrec_19/geodist_train/32.mat (took 13.54s)
+  [27/35] start 33.off
+  [27/35] [ok] 33.off -> data/shrec_19/geodist_train/33.mat (took 14.01s)
+  [28/35] start 34.off
+  [28/35] [ok] 34.off -> data/shrec_19/geodist_train/34.mat (took 13.39s)
+  [29/35] start 35.off
+  [29/35] [ok] 35.off -> data/shrec_19/geodist_train/35.mat (took 13.10s)
+  [30/35] start 4.off
+  [30/35] [ok] 4.off -> data/shrec_19/geodist_train/4.mat (took 12.75s)
+  [31/35] start 5.off
+  [31/35] [ok] 5.off -> data/shrec_19/geodist_train/5.mat (took 13.98s)
+  [32/35] start 6.off
+  [32/35] [ok] 6.off -> data/shrec_19/geodist_train/6.mat (took 12.86s)
+  [33/35] start 7.off
+  [33/35] [ok] 7.off -> data/shrec_19/geodist_train/7.mat (took 12.46s)
+  [34/35] start 8.off
+  [34/35] [ok] 8.off -> data/shrec_19/geodist_train/8.mat (took 13.79s)
+  [35/35] start 9.off
+  [35/35] [ok] 9.off -> data/shrec_19/geodist_train/9.mat (took 12.46s)
+[geo_mat_scape_r] Done. Processed 35 file(s) in 466.48s (avg 13.33s/file).
+[geo_mat_scape_r] Processing 9 file(s) from data/shrec_19/shapes_test
+[geo_mat_scape_r] nn=800, output=data/shrec_19/geodist_test, overwrite=True
+  [1/9] start 36.off
+  [1/9] [ok] 36.off -> data/shrec_19/geodist_test/36.mat (took 13.50s)
+  [2/9] start 37.off
+  [2/9] [ok] 37.off -> data/shrec_19/geodist_test/37.mat (took 14.12s)
+  [3/9] start 38.off
+  [3/9] [ok] 38.off -> data/shrec_19/geodist_test/38.mat (took 14.05s)
+  [4/9] start 39.off
+  [4/9] [ok] 39.off -> data/shrec_19/geodist_test/39.mat (took 13.67s)
+  [5/9] start 40.off
+  [5/9] [ok] 40.off -> data/shrec_19/geodist_test/40.mat (took 13.97s)
+  [6/9] start 41.off
+  [6/9] [ok] 41.off -> data/shrec_19/geodist_test/41.mat (took 14.59s)
+  [7/9] start 42.off
+  [7/9] [ok] 42.off -> data/shrec_19/geodist_test/42.mat (took 14.60s)
+  [8/9] start 43.off
+  [8/9] [ok] 43.off -> data/shrec_19/geodist_test/43.mat (took 14.01s)
+  [9/9] start 44.off
+  [9/9] [ok] 44.off -> data/shrec_19/geodist_test/44.mat (took 13.20s)
+[geo_mat_scape_r] Done. Processed 9 file(s) in 125.71s (avg 13.97s/file).
+[geo_mat_scape_r] Processing 20 file(s) from data/faust/shapes_test
+[geo_mat_scape_r] nn=800, output=data/faust/geodist_test, overwrite=True
+  [1/20] start tr_reg_080.off
+  [1/20] [ok] tr_reg_080.off -> data/faust/geodist_test/tr_reg_080.mat (took 12.04s)
+  [2/20] start tr_reg_081.off
+  [2/20] [ok] tr_reg_081.off -> data/faust/geodist_test/tr_reg_081.mat (took 14.22s)
+  [3/20] start tr_reg_082.off
+  [3/20] [ok] tr_reg_082.off -> data/faust/geodist_test/tr_reg_082.mat (took 11.86s)
+  [4/20] start tr_reg_083.off
+  [4/20] [ok] tr_reg_083.off -> data/faust/geodist_test/tr_reg_083.mat (took 12.12s)
+  [5/20] start tr_reg_084.off
+  [5/20] [ok] tr_reg_084.off -> data/faust/geodist_test/tr_reg_084.mat (took 11.67s)
+  [6/20] start tr_reg_085.off
+  [6/20] [ok] tr_reg_085.off -> data/faust/geodist_test/tr_reg_085.mat (took 12.03s)
+  [7/20] start tr_reg_086.off
+  [7/20] [ok] tr_reg_086.off -> data/faust/geodist_test/tr_reg_086.mat (took 14.81s)
+  [8/20] start tr_reg_087.off
+  [8/20] [ok] tr_reg_087.off -> data/faust/geodist_test/tr_reg_087.mat (took 14.65s)
+  [9/20] start tr_reg_088.off
+  [9/20] [ok] tr_reg_088.off -> data/faust/geodist_test/tr_reg_088.mat (took 14.74s)
+  [10/20] start tr_reg_089.off
+  [10/20] [ok] tr_reg_089.off -> data/faust/geodist_test/tr_reg_089.mat (took 14.54s)
+  [11/20] start tr_reg_090.off
+  [11/20] [ok] tr_reg_090.off -> data/faust/geodist_test/tr_reg_090.mat (took 14.42s)
+  [12/20] start tr_reg_091.off
+  [12/20] [ok] tr_reg_091.off -> data/faust/geodist_test/tr_reg_091.mat (took 14.56s)
+  [13/20] start tr_reg_092.off
+  [13/20] [ok] tr_reg_092.off -> data/faust/geodist_test/tr_reg_092.mat (took 14.61s)
+  [14/20] start tr_reg_093.off
+  [14/20] [ok] tr_reg_093.off -> data/faust/geodist_test/tr_reg_093.mat (took 16.14s)
+  [15/20] start tr_reg_094.off
+  [15/20] [ok] tr_reg_094.off -> data/faust/geodist_test/tr_reg_094.mat (took 14.65s)
+  [16/20] start tr_reg_095.off
+  [16/20] [ok] tr_reg_095.off -> data/faust/geodist_test/tr_reg_095.mat (took 13.76s)
+  [17/20] start tr_reg_096.off
+  [17/20] [ok] tr_reg_096.off -> data/faust/geodist_test/tr_reg_096.mat (took 12.11s)
+  [18/20] start tr_reg_097.off
+  [18/20] [ok] tr_reg_097.off -> data/faust/geodist_test/tr_reg_097.mat (took 12.14s)
+  [19/20] start tr_reg_098.off
+  [19/20] [ok] tr_reg_098.off -> data/faust/geodist_test/tr_reg_098.mat (took 15.37s)
+  [20/20] start tr_reg_099.off
+  [20/20] [ok] tr_reg_099.off -> data/faust/geodist_test/tr_reg_099.mat (took 14.93s)
+[geo_mat_scape_r] Done. Processed 20 file(s) in 275.39s (avg 13.77s/file).
+slurmstepd: error: *** JOB 17638 ON gnode2 CANCELLED AT 2025-10-21T22:56:36 ***

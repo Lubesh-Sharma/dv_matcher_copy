@@ -1,0 +1,8 @@
+# Ignore folders
+**/data/*
+/data/*
+**/data/
+**/corres/*
+/corres/*
+**/corres/visual_result/dvmatcher_scape_r/geodist/*.mat
+visual_result/dvmatcher_scape_r/geodist/*.mat

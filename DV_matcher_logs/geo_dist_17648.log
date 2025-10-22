@@ -1,0 +1,311 @@
+[geo_mat_scape_r] Processing 80 file(s) from data/faust/shapes_train
+[geo_mat_scape_r] nn=800, output=data/faust/geodist_train, overwrite=True
+  [1/80] start tr_reg_000.off
+  [1/80] [ok] tr_reg_000.off -> data/faust/geodist_train/tr_reg_000.mat (took 13.02s)
+  [2/80] start tr_reg_001.off
+  [2/80] [ok] tr_reg_001.off -> data/faust/geodist_train/tr_reg_001.mat (took 12.01s)
+  [3/80] start tr_reg_002.off
+  [3/80] [ok] tr_reg_002.off -> data/faust/geodist_train/tr_reg_002.mat (took 11.91s)
+  [4/80] start tr_reg_003.off
+  [4/80] [ok] tr_reg_003.off -> data/faust/geodist_train/tr_reg_003.mat (took 12.17s)
+  [5/80] start tr_reg_004.off
+  [5/80] [ok] tr_reg_004.off -> data/faust/geodist_train/tr_reg_004.mat (took 11.78s)
+  [6/80] start tr_reg_005.off
+  [6/80] [ok] tr_reg_005.off -> data/faust/geodist_train/tr_reg_005.mat (took 12.88s)
+  [7/80] start tr_reg_006.off
+  [7/80] [ok] tr_reg_006.off -> data/faust/geodist_train/tr_reg_006.mat (took 11.57s)
+  [8/80] start tr_reg_007.off
+  [8/80] [ok] tr_reg_007.off -> data/faust/geodist_train/tr_reg_007.mat (took 11.78s)
+  [9/80] start tr_reg_008.off
+  [9/80] [ok] tr_reg_008.off -> data/faust/geodist_train/tr_reg_008.mat (took 11.69s)
+  [10/80] start tr_reg_009.off
+  [10/80] [ok] tr_reg_009.off -> data/faust/geodist_train/tr_reg_009.mat (took 12.17s)
+  [11/80] start tr_reg_010.off
+  [11/80] [ok] tr_reg_010.off -> data/faust/geodist_train/tr_reg_010.mat (took 12.27s)
+  [12/80] start tr_reg_011.off
+  [12/80] [ok] tr_reg_011.off -> data/faust/geodist_train/tr_reg_011.mat (took 11.85s)
+  [13/80] start tr_reg_012.off
+  [13/80] [ok] tr_reg_012.off -> data/faust/geodist_train/tr_reg_012.mat (took 12.27s)
+  [14/80] start tr_reg_013.off
+  [14/80] [ok] tr_reg_013.off -> data/faust/geodist_train/tr_reg_013.mat (took 11.88s)
+  [15/80] start tr_reg_014.off
+  [15/80] [ok] tr_reg_014.off -> data/faust/geodist_train/tr_reg_014.mat (took 12.03s)
+  [16/80] start tr_reg_015.off
+  [16/80] [ok] tr_reg_015.off -> data/faust/geodist_train/tr_reg_015.mat (took 11.84s)
+  [17/80] start tr_reg_016.off
+  [17/80] [ok] tr_reg_016.off -> data/faust/geodist_train/tr_reg_016.mat (took 12.48s)
+  [18/80] start tr_reg_017.off
+  [18/80] [ok] tr_reg_017.off -> data/faust/geodist_train/tr_reg_017.mat (took 12.05s)
+  [19/80] start tr_reg_018.off
+  [19/80] [ok] tr_reg_018.off -> data/faust/geodist_train/tr_reg_018.mat (took 11.90s)
+  [20/80] start tr_reg_019.off
+  [20/80] [ok] tr_reg_019.off -> data/faust/geodist_train/tr_reg_019.mat (took 11.57s)
+  [21/80] start tr_reg_020.off
+  [21/80] [ok] tr_reg_020.off -> data/faust/geodist_train/tr_reg_020.mat (took 12.16s)
+  [22/80] start tr_reg_021.off
+  [22/80] [ok] tr_reg_021.off -> data/faust/geodist_train/tr_reg_021.mat (took 11.95s)
+  [23/80] start tr_reg_022.off
+  [23/80] [ok] tr_reg_022.off -> data/faust/geodist_train/tr_reg_022.mat (took 11.99s)
+  [24/80] start tr_reg_023.off
+  [24/80] [ok] tr_reg_023.off -> data/faust/geodist_train/tr_reg_023.mat (took 11.86s)
+  [25/80] start tr_reg_024.off
+  [25/80] [ok] tr_reg_024.off -> data/faust/geodist_train/tr_reg_024.mat (took 12.85s)
+  [26/80] start tr_reg_025.off
+  [26/80] [ok] tr_reg_025.off -> data/faust/geodist_train/tr_reg_025.mat (took 11.80s)
+  [27/80] start tr_reg_026.off
+  [27/80] [ok] tr_reg_026.off -> data/faust/geodist_train/tr_reg_026.mat (took 12.25s)
+  [28/80] start tr_reg_027.off
+  [28/80] [ok] tr_reg_027.off -> data/faust/geodist_train/tr_reg_027.mat (took 11.91s)
+  [29/80] start tr_reg_028.off
+  [29/80] [ok] tr_reg_028.off -> data/faust/geodist_train/tr_reg_028.mat (took 12.19s)
+  [30/80] start tr_reg_029.off
+  [30/80] [ok] tr_reg_029.off -> data/faust/geodist_train/tr_reg_029.mat (took 11.75s)
+  [31/80] start tr_reg_030.off
+  [31/80] [ok] tr_reg_030.off -> data/faust/geodist_train/tr_reg_030.mat (took 12.08s)
+  [32/80] start tr_reg_031.off
+  [32/80] [ok] tr_reg_031.off -> data/faust/geodist_train/tr_reg_031.mat (took 11.84s)
+  [33/80] start tr_reg_032.off
+  [33/80] [ok] tr_reg_032.off -> data/faust/geodist_train/tr_reg_032.mat (took 12.27s)
+  [34/80] start tr_reg_033.off
+  [34/80] [ok] tr_reg_033.off -> data/faust/geodist_train/tr_reg_033.mat (took 12.46s)
+  [35/80] start tr_reg_034.off
+  [35/80] [ok] tr_reg_034.off -> data/faust/geodist_train/tr_reg_034.mat (took 11.80s)
+  [36/80] start tr_reg_035.off
+  [36/80] [ok] tr_reg_035.off -> data/faust/geodist_train/tr_reg_035.mat (took 11.84s)
+  [37/80] start tr_reg_036.off
+  [37/80] [ok] tr_reg_036.off -> data/faust/geodist_train/tr_reg_036.mat (took 11.88s)
+  [38/80] start tr_reg_037.off
+  [38/80] [ok] tr_reg_037.off -> data/faust/geodist_train/tr_reg_037.mat (took 11.79s)
+  [39/80] start tr_reg_038.off
+  [39/80] [ok] tr_reg_038.off -> data/faust/geodist_train/tr_reg_038.mat (took 12.38s)
+  [40/80] start tr_reg_039.off
+  [40/80] [ok] tr_reg_039.off -> data/faust/geodist_train/tr_reg_039.mat (took 12.69s)
+  [41/80] start tr_reg_040.off
+  [41/80] [ok] tr_reg_040.off -> data/faust/geodist_train/tr_reg_040.mat (took 12.12s)
+  [42/80] start tr_reg_041.off
+  [42/80] [ok] tr_reg_041.off -> data/faust/geodist_train/tr_reg_041.mat (took 11.79s)
+  [43/80] start tr_reg_042.off
+  [43/80] [ok] tr_reg_042.off -> data/faust/geodist_train/tr_reg_042.mat (took 11.75s)
+  [44/80] start tr_reg_043.off
+  [44/80] [ok] tr_reg_043.off -> data/faust/geodist_train/tr_reg_043.mat (took 11.85s)
+  [45/80] start tr_reg_044.off
+  [45/80] [ok] tr_reg_044.off -> data/faust/geodist_train/tr_reg_044.mat (took 12.27s)
+  [46/80] start tr_reg_045.off
+  [46/80] [ok] tr_reg_045.off -> data/faust/geodist_train/tr_reg_045.mat (took 12.22s)
+  [47/80] start tr_reg_046.off
+  [47/80] [ok] tr_reg_046.off -> data/faust/geodist_train/tr_reg_046.mat (took 14.02s)
+  [48/80] start tr_reg_047.off
+  [48/80] [ok] tr_reg_047.off -> data/faust/geodist_train/tr_reg_047.mat (took 14.98s)
+  [49/80] start tr_reg_048.off
+  [49/80] [ok] tr_reg_048.off -> data/faust/geodist_train/tr_reg_048.mat (took 14.62s)
+  [50/80] start tr_reg_049.off
+  [50/80] [ok] tr_reg_049.off -> data/faust/geodist_train/tr_reg_049.mat (took 14.40s)
+  [51/80] start tr_reg_050.off
+  [51/80] [ok] tr_reg_050.off -> data/faust/geodist_train/tr_reg_050.mat (took 11.84s)
+  [52/80] start tr_reg_051.off
+  [52/80] [ok] tr_reg_051.off -> data/faust/geodist_train/tr_reg_051.mat (took 14.28s)
+  [53/80] start tr_reg_052.off
+  [53/80] [ok] tr_reg_052.off -> data/faust/geodist_train/tr_reg_052.mat (took 14.94s)
+  [54/80] start tr_reg_053.off
+  [54/80] [ok] tr_reg_053.off -> data/faust/geodist_train/tr_reg_053.mat (took 11.86s)
+  [55/80] start tr_reg_054.off
+  [55/80] [ok] tr_reg_054.off -> data/faust/geodist_train/tr_reg_054.mat (took 14.92s)
+  [56/80] start tr_reg_055.off
+  [56/80] [ok] tr_reg_055.off -> data/faust/geodist_train/tr_reg_055.mat (took 12.14s)
+  [57/80] start tr_reg_056.off
+  [57/80] [ok] tr_reg_056.off -> data/faust/geodist_train/tr_reg_056.mat (took 14.42s)
+  [58/80] start tr_reg_057.off
+  [58/80] [ok] tr_reg_057.off -> data/faust/geodist_train/tr_reg_057.mat (took 14.29s)
+  [59/80] start tr_reg_058.off
+  [59/80] [ok] tr_reg_058.off -> data/faust/geodist_train/tr_reg_058.mat (took 12.08s)
+  [60/80] start tr_reg_059.off
+  [60/80] [ok] tr_reg_059.off -> data/faust/geodist_train/tr_reg_059.mat (took 11.85s)
+  [61/80] start tr_reg_060.off
+  [61/80] [ok] tr_reg_060.off -> data/faust/geodist_train/tr_reg_060.mat (took 11.61s)
+  [62/80] start tr_reg_061.off
+  [62/80] [ok] tr_reg_061.off -> data/faust/geodist_train/tr_reg_061.mat (took 14.55s)
+  [63/80] start tr_reg_062.off
+  [63/80] [ok] tr_reg_062.off -> data/faust/geodist_train/tr_reg_062.mat (took 14.89s)
+  [64/80] start tr_reg_063.off
+  [64/80] [ok] tr_reg_063.off -> data/faust/geodist_train/tr_reg_063.mat (took 12.01s)
+  [65/80] start tr_reg_064.off
+  [65/80] [ok] tr_reg_064.off -> data/faust/geodist_train/tr_reg_064.mat (took 14.20s)
+  [66/80] start tr_reg_065.off
+  [66/80] [ok] tr_reg_065.off -> data/faust/geodist_train/tr_reg_065.mat (took 15.07s)
+  [67/80] start tr_reg_066.off
+  [67/80] [ok] tr_reg_066.off -> data/faust/geodist_train/tr_reg_066.mat (took 14.07s)
+  [68/80] start tr_reg_067.off
+  [68/80] [ok] tr_reg_067.off -> data/faust/geodist_train/tr_reg_067.mat (took 13.98s)
+  [69/80] start tr_reg_068.off
+  [69/80] [ok] tr_reg_068.off -> data/faust/geodist_train/tr_reg_068.mat (took 12.34s)
+  [70/80] start tr_reg_069.off
+  [70/80] [ok] tr_reg_069.off -> data/faust/geodist_train/tr_reg_069.mat (took 13.72s)
+  [71/80] start tr_reg_070.off
+  [71/80] [ok] tr_reg_070.off -> data/faust/geodist_train/tr_reg_070.mat (took 14.18s)
+  [72/80] start tr_reg_071.off
+  [72/80] [ok] tr_reg_071.off -> data/faust/geodist_train/tr_reg_071.mat (took 12.63s)
+  [73/80] start tr_reg_072.off
+  [73/80] [ok] tr_reg_072.off -> data/faust/geodist_train/tr_reg_072.mat (took 15.45s)
+  [74/80] start tr_reg_073.off
+  [74/80] [ok] tr_reg_073.off -> data/faust/geodist_train/tr_reg_073.mat (took 14.21s)
+  [75/80] start tr_reg_074.off
+  [75/80] [ok] tr_reg_074.off -> data/faust/geodist_train/tr_reg_074.mat (took 12.32s)
+  [76/80] start tr_reg_075.off
+  [76/80] [ok] tr_reg_075.off -> data/faust/geodist_train/tr_reg_075.mat (took 14.37s)
+  [77/80] start tr_reg_076.off
+  [77/80] [ok] tr_reg_076.off -> data/faust/geodist_train/tr_reg_076.mat (took 14.34s)
+  [78/80] start tr_reg_077.off
+  [78/80] [ok] tr_reg_077.off -> data/faust/geodist_train/tr_reg_077.mat (took 12.04s)
+  [79/80] start tr_reg_078.off
+  [79/80] [ok] tr_reg_078.off -> data/faust/geodist_train/tr_reg_078.mat (took 15.55s)
+  [80/80] start tr_reg_079.off
+  [80/80] [ok] tr_reg_079.off -> data/faust/geodist_train/tr_reg_079.mat (took 14.59s)
+[geo_mat_scape_r] Done. Processed 80 file(s) in 1021.64s (avg 12.77s/file).
+[geo_mat_scape_r] Processing 51 file(s) from data/scape_partial/shapes_train
+[geo_mat_scape_r] nn=800, output=data/scape_partial/geodist_train, overwrite=True
+  [1/51] start mesh000.off
+  [1/51] [ok] mesh000.off -> data/scape_partial/geodist_train/mesh000.mat (took 14.65s)
+  [2/51] start mesh001.off
+  [2/51] [ok] mesh001.off -> data/scape_partial/geodist_train/mesh001.mat (took 13.79s)
+  [3/51] start mesh002.off
+  [3/51] [ok] mesh002.off -> data/scape_partial/geodist_train/mesh002.mat (took 12.46s)
+  [4/51] start mesh003.off
+  [4/51] [ok] mesh003.off -> data/scape_partial/geodist_train/mesh003.mat (took 14.49s)
+  [5/51] start mesh004.off
+  [5/51] [ok] mesh004.off -> data/scape_partial/geodist_train/mesh004.mat (took 15.12s)
+  [6/51] start mesh005.off
+  [6/51] [ok] mesh005.off -> data/scape_partial/geodist_train/mesh005.mat (took 13.36s)
+  [7/51] start mesh006.off
+  [7/51] [ok] mesh006.off -> data/scape_partial/geodist_train/mesh006.mat (took 12.53s)
+  [8/51] start mesh007.off
+  [8/51] [ok] mesh007.off -> data/scape_partial/geodist_train/mesh007.mat (took 12.62s)
+  [9/51] start mesh008.off
+  [9/51] [ok] mesh008.off -> data/scape_partial/geodist_train/mesh008.mat (took 12.43s)
+  [10/51] start mesh009.off
+  [10/51] [ok] mesh009.off -> data/scape_partial/geodist_train/mesh009.mat (took 12.12s)
+  [11/51] start mesh010.off
+  [11/51] [ok] mesh010.off -> data/scape_partial/geodist_train/mesh010.mat (took 12.23s)
+  [12/51] start mesh011.off
+  [12/51] [ok] mesh011.off -> data/scape_partial/geodist_train/mesh011.mat (took 12.33s)
+  [13/51] start mesh012.off
+  [13/51] [ok] mesh012.off -> data/scape_partial/geodist_train/mesh012.mat (took 12.29s)
+  [14/51] start mesh013.off
+  [14/51] [ok] mesh013.off -> data/scape_partial/geodist_train/mesh013.mat (took 12.54s)
+  [15/51] start mesh014.off
+  [15/51] [ok] mesh014.off -> data/scape_partial/geodist_train/mesh014.mat (took 12.60s)
+  [16/51] start mesh015.off
+  [16/51] [ok] mesh015.off -> data/scape_partial/geodist_train/mesh015.mat (took 11.55s)
+  [17/51] start mesh016.off
+  [17/51] [ok] mesh016.off -> data/scape_partial/geodist_train/mesh016.mat (took 11.90s)
+  [18/51] start mesh017.off
+  [18/51] [ok] mesh017.off -> data/scape_partial/geodist_train/mesh017.mat (took 12.21s)
+  [19/51] start mesh018.off
+  [19/51] [ok] mesh018.off -> data/scape_partial/geodist_train/mesh018.mat (took 12.48s)
+  [20/51] start mesh019.off
+  [20/51] [ok] mesh019.off -> data/scape_partial/geodist_train/mesh019.mat (took 12.41s)
+  [21/51] start mesh020.off
+  [21/51] [ok] mesh020.off -> data/scape_partial/geodist_train/mesh020.mat (took 12.27s)
+  [22/51] start mesh021.off
+  [22/51] [ok] mesh021.off -> data/scape_partial/geodist_train/mesh021.mat (took 11.94s)
+  [23/51] start mesh022.off
+  [23/51] [ok] mesh022.off -> data/scape_partial/geodist_train/mesh022.mat (took 12.13s)
+  [24/51] start mesh023.off
+  [24/51] [ok] mesh023.off -> data/scape_partial/geodist_train/mesh023.mat (took 11.97s)
+  [25/51] start mesh024.off
+  [25/51] [ok] mesh024.off -> data/scape_partial/geodist_train/mesh024.mat (took 12.13s)
+  [26/51] start mesh025.off
+  [26/51] [ok] mesh025.off -> data/scape_partial/geodist_train/mesh025.mat (took 12.90s)
+  [27/51] start mesh026.off
+  [27/51] [ok] mesh026.off -> data/scape_partial/geodist_train/mesh026.mat (took 12.41s)
+  [28/51] start mesh027.off
+  [28/51] [ok] mesh027.off -> data/scape_partial/geodist_train/mesh027.mat (took 12.37s)
+  [29/51] start mesh028.off
+  [29/51] [ok] mesh028.off -> data/scape_partial/geodist_train/mesh028.mat (took 12.47s)
+  [30/51] start mesh029.off
+  [30/51] [ok] mesh029.off -> data/scape_partial/geodist_train/mesh029.mat (took 12.11s)
+  [31/51] start mesh030.off
+  [31/51] [ok] mesh030.off -> data/scape_partial/geodist_train/mesh030.mat (took 11.98s)
+  [32/51] start mesh031.off
+  [32/51] [ok] mesh031.off -> data/scape_partial/geodist_train/mesh031.mat (took 12.16s)
+  [33/51] start mesh032.off
+  [33/51] [ok] mesh032.off -> data/scape_partial/geodist_train/mesh032.mat (took 12.40s)
+  [34/51] start mesh033.off
+  [34/51] [ok] mesh033.off -> data/scape_partial/geodist_train/mesh033.mat (took 12.42s)
+  [35/51] start mesh034.off
+  [35/51] [ok] mesh034.off -> data/scape_partial/geodist_train/mesh034.mat (took 12.43s)
+  [36/51] start mesh035.off
+  [36/51] [ok] mesh035.off -> data/scape_partial/geodist_train/mesh035.mat (took 12.05s)
+  [37/51] start mesh036.off
+  [37/51] [ok] mesh036.off -> data/scape_partial/geodist_train/mesh036.mat (took 11.91s)
+  [38/51] start mesh037.off
+  [38/51] [ok] mesh037.off -> data/scape_partial/geodist_train/mesh037.mat (took 11.94s)
+  [39/51] start mesh038.off
+  [39/51] [ok] mesh038.off -> data/scape_partial/geodist_train/mesh038.mat (took 12.37s)
+  [40/51] start mesh039.off
+  [40/51] [ok] mesh039.off -> data/scape_partial/geodist_train/mesh039.mat (took 13.70s)
+  [41/51] start mesh040.off
+  [41/51] [ok] mesh040.off -> data/scape_partial/geodist_train/mesh040.mat (took 12.16s)
+  [42/51] start mesh041.off
+  [42/51] [ok] mesh041.off -> data/scape_partial/geodist_train/mesh041.mat (took 12.21s)
+  [43/51] start mesh042.off
+  [43/51] [ok] mesh042.off -> data/scape_partial/geodist_train/mesh042.mat (took 12.02s)
+  [44/51] start mesh043.off
+  [44/51] [ok] mesh043.off -> data/scape_partial/geodist_train/mesh043.mat (took 12.01s)
+  [45/51] start mesh044.off
+  [45/51] [ok] mesh044.off -> data/scape_partial/geodist_train/mesh044.mat (took 11.97s)
+  [46/51] start mesh045.off
+  [46/51] [ok] mesh045.off -> data/scape_partial/geodist_train/mesh045.mat (took 12.48s)
+  [47/51] start mesh046.off
+  [47/51] [ok] mesh046.off -> data/scape_partial/geodist_train/mesh046.mat (took 11.96s)
+  [48/51] start mesh047.off
+  [48/51] [ok] mesh047.off -> data/scape_partial/geodist_train/mesh047.mat (took 12.10s)
+  [49/51] start mesh048.off
+  [49/51] [ok] mesh048.off -> data/scape_partial/geodist_train/mesh048.mat (took 12.50s)
+  [50/51] start mesh049.off
+  [50/51] [ok] mesh049.off -> data/scape_partial/geodist_train/mesh049.mat (took 12.39s)
+  [51/51] start mesh050.off
+  [51/51] [ok] mesh050.off -> data/scape_partial/geodist_train/mesh050.mat (took 12.19s)
+[geo_mat_scape_r] Done. Processed 51 file(s) in 636.18s (avg 12.47s/file).
+[geo_mat_scape_r] Processing 20 file(s) from data/scape_partial/shapes_test
+[geo_mat_scape_r] nn=800, output=data/scape_partial/geodist_test, overwrite=True
+  [1/20] start mesh052.off
+  [1/20] [ok] mesh052.off -> data/scape_partial/geodist_test/mesh052.mat (took 12.16s)
+  [2/20] start mesh053.off
+  [2/20] [ok] mesh053.off -> data/scape_partial/geodist_test/mesh053.mat (took 12.22s)
+  [3/20] start mesh054.off
+  [3/20] [ok] mesh054.off -> data/scape_partial/geodist_test/mesh054.mat (took 11.88s)
+  [4/20] start mesh055.off
+  [4/20] [ok] mesh055.off -> data/scape_partial/geodist_test/mesh055.mat (took 12.77s)
+  [5/20] start mesh056.off
+  [5/20] [ok] mesh056.off -> data/scape_partial/geodist_test/mesh056.mat (took 12.42s)
+  [6/20] start mesh057.off
+  [6/20] [ok] mesh057.off -> data/scape_partial/geodist_test/mesh057.mat (took 11.94s)
+  [7/20] start mesh058.off
+  [7/20] [ok] mesh058.off -> data/scape_partial/geodist_test/mesh058.mat (took 11.81s)
+  [8/20] start mesh059.off
+  [8/20] [ok] mesh059.off -> data/scape_partial/geodist_test/mesh059.mat (took 12.18s)
+  [9/20] start mesh060.off
+  [9/20] [ok] mesh060.off -> data/scape_partial/geodist_test/mesh060.mat (took 11.75s)
+  [10/20] start mesh061.off
+  [10/20] [ok] mesh061.off -> data/scape_partial/geodist_test/mesh061.mat (took 12.48s)
+  [11/20] start mesh062.off
+  [11/20] [ok] mesh062.off -> data/scape_partial/geodist_test/mesh062.mat (took 12.03s)
+  [12/20] start mesh063.off
+  [12/20] [ok] mesh063.off -> data/scape_partial/geodist_test/mesh063.mat (took 12.00s)
+  [13/20] start mesh064.off
+  [13/20] [ok] mesh064.off -> data/scape_partial/geodist_test/mesh064.mat (took 12.02s)
+  [14/20] start mesh065.off
+  [14/20] [ok] mesh065.off -> data/scape_partial/geodist_test/mesh065.mat (took 12.15s)
+  [15/20] start mesh066.off
+  [15/20] [ok] mesh066.off -> data/scape_partial/geodist_test/mesh066.mat (took 12.08s)
+  [16/20] start mesh067.off
+  [16/20] [ok] mesh067.off -> data/scape_partial/geodist_test/mesh067.mat (took 12.26s)
+  [17/20] start mesh068.off
+  [17/20] [ok] mesh068.off -> data/scape_partial/geodist_test/mesh068.mat (took 12.20s)
+  [18/20] start mesh069.off
+  [18/20] [ok] mesh069.off -> data/scape_partial/geodist_test/mesh069.mat (took 11.85s)
+  [19/20] start mesh070.off
+  [19/20] [ok] mesh070.off -> data/scape_partial/geodist_test/mesh070.mat (took 12.39s)
+  [20/20] start mesh071.off
+  [20/20] [ok] mesh071.off -> data/scape_partial/geodist_test/mesh071.mat (took 13.04s)
+[geo_mat_scape_r] Done. Processed 20 file(s) in 243.65s (avg 12.18s/file).

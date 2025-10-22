@@ -1,0 +1,27 @@
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/torch/cuda/__init__.py:628: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Jitting Chamfer 3D
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/pytorch_lightning/loggers/tensorboard.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+Using cache found in /home/du2/22CS30065/.cache/torch/hub/mhamilton723_FeatUp_main
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/featup/featurizers/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/featup/featurizers/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/featup/featurizers/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Using cache found in /home/du2/22CS30065/.cache/torch/hub/facebookresearch_dinov2_main
+/home/du2/22CS30065/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/du2/22CS30065/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/du2/22CS30065/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Loaded JIT 3D CUDA chamfer distance
+using dataset cache path: data/surreal/cache_surreal_train.pt
+  --> dataset not in cache, repopulating
+  0%|          | 0/4000 [00:00<?, ?it/s]/home/du2/22CS30065/DV-Matcher/models/model.py:884: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:275.)
+  img_norm = torch.tensor(img_norm).permute(0,3,1,2).to(device)
+/home/du2/22CS30065/miniconda3/envs/dv/lib/python3.10/site-packages/torch/functional.py:507: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3549.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+  0%|          | 1/4000 [09:54<660:17:09, 594.41s/it]  0%|          | 2/4000 [19:32<649:22:07, 584.72s/it]slurmstepd: error: *** JOB 17636 ON gnode2 CANCELLED AT 2025-10-21T20:42:10 ***
