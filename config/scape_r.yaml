@@ -32,6 +32,12 @@ training:
   batch_size: 1
   epochs: 3
 
+orientation:
+  dims: [3, 64, 128, 256]
+  angle_bins: 8
+  angle_lambda: 0.4
+  domain_lambda: 1.0
+
 loss:
   k_deform: 10
   k_dist: 500
