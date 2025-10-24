@@ -2,6 +2,7 @@ import argparse
 import yaml
 import os
 import torch
+from typing import Optional
 from models.dataset import Dataset, shape_to_device
 from models.loss import GraphDeformLoss_Neural
 from sklearn.neighbors import NearestNeighbors
@@ -65,18 +66,23 @@ def train_net(cfg):
     deformer = Deformer(k=cfg["loss"]["k_deform"]).to(device)
 
     orient_cfg = cfg.get("orientation", {})
-    orientation_aligner = OrientationAligner(
-        orient_dims=orient_cfg.get("dims", [3, 64, 128, 256]),
-        angle_bins=orient_cfg.get("angle_bins", 8),
-        angle_weight=orient_cfg.get("angle_lambda", 0.4),
-        domain_weight=orient_cfg.get("domain_lambda", 1.0),
-        device=device,
-    ).to(device)
+    use_orientation = orient_cfg.get("enabled", True)
+    orientation_aligner: Optional[OrientationAligner] = None
+    if use_orientation:
+        orientation_aligner = OrientationAligner(
+            orient_dims=orient_cfg.get("dims", [3, 64, 128, 256]),
+            angle_bins=orient_cfg.get("angle_bins", 8),
+            enabled=use_orientation,
+            angle_weight=orient_cfg.get("angle_lambda", 0.4),
+            domain_weight=orient_cfg.get("domain_lambda", 1.0),
+            device=device,
+        ).to(device)
 
     params1 = point_backbone.parameters()
     params2 = deformer.parameters()
-    params3 = orientation_aligner.parameters()
-    all_params = list(params1) + list(params2) + list(params3)
+    all_params = list(params1) + list(params2)
+    if use_orientation and orientation_aligner is not None:
+        all_params += list(orientation_aligner.parameters())
     lr = float(cfg["optimizer"]["lr"])
     optimizer = torch.optim.Adam(all_params, lr=lr, betas=(cfg["optimizer"]["b1"], cfg["optimizer"]["b2"]))
     criterion = GraphDeformLoss_Neural(k_deform=cfg["loss"]["k_deform"],w_dist=cfg["loss"]["w_dist"],w_map=cfg["loss"]["w_map"],k_dist=cfg["loss"]["k_dist"],N_dist=cfg["loss"]["N_dist"],partial=cfg["loss"]["partial"],w_deform=cfg["loss"]["w_deform"],w_img = cfg["loss"]["w_img"],w_rank = cfg["loss"]["w_rank"],w_self_rec = cfg["loss"]["w_self_rec"],w_cd = cfg["loss"]["deform"]["w_cd"],w_arap = cfg["loss"]["deform"]["w_arap"],save_name = cfg["expname"]).to(device)
@@ -105,7 +111,8 @@ def train_net(cfg):
         alpha_i = alpha_list[epoch-1]
         point_backbone.train()
         deformer.train()
-        orientation_aligner.train()
+        if use_orientation and orientation_aligner is not None:
+            orientation_aligner.train()
         for i, data in tqdm(enumerate(train_loader)):
 
             data = shape_to_device(data, device)
@@ -119,9 +126,14 @@ def train_net(cfg):
             else:
                 dino_feat1, dino_feat2 = None,None
             
-            verts1_aligned, verts2_aligned, angle_loss, domain_loss = orientation_aligner(
-                verts1, verts2, mode="train"
-            )
+            if use_orientation and orientation_aligner is not None:
+                verts1_aligned, verts2_aligned, angle_loss, domain_loss = orientation_aligner(
+                    verts1, verts2, mode="train"
+                )
+            else:
+                verts1_aligned, verts2_aligned = verts1, verts2
+                angle_loss = torch.zeros(1, device=device)
+                domain_loss = torch.zeros(1, device=device)
 
             feat1, cfeats1 = point_backbone(verts1_aligned.permute(0,2,1), dino_feat1,upsampler)
             feat2, cfeats2 = point_backbone(verts2_aligned.permute(0,2,1), dino_feat2,upsampler)
@@ -143,16 +155,24 @@ def train_net(cfg):
             domain_loss_sum += domain_loss.detach()
                        
             log_batch = (i + 1) % cfg["misc"]["log_interval"] == 0
-            print(
-                f"epoch:{epoch}, loss:{(loss_sum/iterations).item()}, dist_loss:{(dist_loss_sum/iterations).item()}, "
-                f"deform_loss:{(deform_loss_sum/iterations).item()}, map_loss:{(map_loss_sum/iterations).item()}, "
-                f"self_rec_loss:{(self_rec_loss_sum/iterations).item()}, angle_loss:{(angle_loss_sum/iterations).item()}, "
-                f"domain_loss:{(domain_loss_sum/iterations).item()}"
-            )
+            if use_orientation:
+                print(
+                    f"epoch:{epoch}, loss:{(loss_sum/iterations).item()}, dist_loss:{(dist_loss_sum/iterations).item()}, "
+                    f"deform_loss:{(deform_loss_sum/iterations).item()}, map_loss:{(map_loss_sum/iterations).item()}, "
+                    f"self_rec_loss:{(self_rec_loss_sum/iterations).item()}, angle_loss:{(angle_loss_sum/iterations).item()}, "
+                    f"domain_loss:{(domain_loss_sum/iterations).item()}"
+                )
+            else:
+                print(
+                    f"epoch:{epoch}, loss:{(loss_sum/iterations).item()}, dist_loss:{(dist_loss_sum/iterations).item()}, "
+                    f"deform_loss:{(deform_loss_sum/iterations).item()}, map_loss:{(map_loss_sum/iterations).item()}, "
+                    f"self_rec_loss:{(self_rec_loss_sum/iterations).item()}"
+                )
             if log_batch:
                 torch.save(point_backbone.state_dict(), model_save_path.format('train_best'))
                 torch.save(deformer.state_dict(), model_save_path.format('deformer_train_best'))
-                torch.save(orientation_aligner.state_dict(), orient_save_path.format('train_best'))
+                if use_orientation and orientation_aligner is not None:
+                    torch.save(orientation_aligner.state_dict(), orient_save_path.format('train_best'))
         
         if train_writer is not None:
             train_writer.add_scalar('Train_Loss', (loss_sum/iterations).item(), epoch)
@@ -160,15 +180,17 @@ def train_net(cfg):
             train_writer.add_scalar('Deform_Loss', (deform_loss_sum/iterations).item(), epoch)
             train_writer.add_scalar('Map_Loss', (map_loss_sum/iterations).item(), epoch)
             train_writer.add_scalar('Self_Rec_Loss', (self_rec_loss_sum/iterations).item(), epoch)
-            train_writer.add_scalar('Angle_Loss', (angle_loss_sum/iterations).item(), epoch)
-            train_writer.add_scalar('Domain_Loss', (domain_loss_sum/iterations).item(), epoch)
+            if use_orientation:
+                train_writer.add_scalar('Angle_Loss', (angle_loss_sum/iterations).item(), epoch)
+                train_writer.add_scalar('Domain_Loss', (domain_loss_sum/iterations).item(), epoch)
             
         with torch.no_grad():
             eval_loss = 0  
             val_iters = 0
             point_backbone.eval()
             deformer.eval()
-            orientation_aligner.eval()
+            if use_orientation and orientation_aligner is not None:
+                orientation_aligner.eval()
             for i, data in tqdm(enumerate(test_loader)):
                 data = shape_to_device(data, device)
                 optimizer.zero_grad()
@@ -177,9 +199,14 @@ def train_net(cfg):
                     dino_feat1, dino_feat2 = data["shape1"]["feat"],data["shape2"]["feat"]
                 else:
                     dino_feat1, dino_feat2 = None,None
-                verts1_aligned, verts2_aligned, angle_loss, domain_loss = orientation_aligner(
-                    verts1, verts2, mode="val"
-                )
+                if use_orientation and orientation_aligner is not None:
+                    verts1_aligned, verts2_aligned, angle_loss, domain_loss = orientation_aligner(
+                        verts1, verts2, mode="val"
+                    )
+                else:
+                    verts1_aligned, verts2_aligned = verts1, verts2
+                    angle_loss = torch.zeros(1, device=device)
+                    domain_loss = torch.zeros(1, device=device)
                 feat1, cfeats1 = point_backbone(verts1_aligned.permute(0,2,1), dino_feat1,upsampler)
                 feat2, cfeats2 = point_backbone(verts2_aligned.permute(0,2,1), dino_feat2,upsampler)
                 
@@ -198,13 +225,15 @@ def train_net(cfg):
         if (epoch + 1) % cfg["misc"]["checkpoint_interval"] == 0:
             torch.save(point_backbone.state_dict(), model_save_path.format(epoch))
             torch.save(deformer.state_dict(), model_save_path.format('deformer' + str(epoch)))
-            torch.save(orientation_aligner.state_dict(), orient_save_path.format(epoch))
+            if use_orientation and orientation_aligner is not None:
+                torch.save(orientation_aligner.state_dict(), orient_save_path.format(epoch))
             
         if eval_loss <= eval_best_loss:
             eval_best_loss = eval_loss
             torch.save(point_backbone.state_dict(), model_save_path.format('val_best'))
             torch.save(deformer.state_dict(), model_save_path.format('deformer_val_best'))
-            torch.save(orientation_aligner.state_dict(), orient_save_path.format('val_best'))
+            if use_orientation and orientation_aligner is not None:
+                torch.save(orientation_aligner.state_dict(), orient_save_path.format('val_best'))
 
 
 if __name__ == "__main__":

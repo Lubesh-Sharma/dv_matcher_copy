@@ -47,7 +47,7 @@ class OrientNet(nn.Module):
             mlp_layers.append(
                 nn.Sequential(
                     nn.Conv1d(mlp_input_dim, dim, kernel_size=1, bias=False),
-                    nn.BatchNorm1d(dim),
+                    nn.GroupNorm(1, dim),
                     nn.LeakyReLU(negative_slope=0.2),
                 )
             )

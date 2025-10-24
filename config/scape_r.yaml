@@ -33,6 +33,7 @@ training:
   epochs: 3
 
 orientation:
+  enabled: true
   dims: [3, 64, 128, 256]
   angle_bins: 8
   angle_lambda: 0.4

@@ -8,48 +8,6 @@ import torch.nn.functional as F
 from models.orientation_module import OrientNet
 
 
-class DataAugment(nn.Module):
-	"""Subset of SE-ORNet data augmentation routines for rotation/noise."""
-
-	def __init__(
-		self,
-		operations=None,
-		flip_probability: float = 0.0,
-		scale_range=None,
-		rotate_nbins: int = 8,
-		noise_variance: float = 0.0001,
-	):
-		super().__init__()
-		if operations is None:
-			operations = ["noise"]
-		if scale_range is None:
-			scale_range = [0.95, 1.05]
-		self.operations = operations
-		self.flip_probability = flip_probability
-		self.scale_range = scale_range
-		self.rotate_nbins = rotate_nbins
-		self.noise_variance = noise_variance
-
-	def forward(self, batch_data: torch.Tensor):
-		device = batch_data.device
-		out = batch_data.clone()
-		rotated_gt: Optional[torch.Tensor] = None
-
-		if "scale" in self.operations:
-			scales = torch.empty(
-				batch_data.size(0), device=device, dtype=batch_data.dtype
-			).uniform_(self.scale_range[0], self.scale_range[1])
-			out = out * scales.view(-1, 1, 1)
-		if "rotate" in self.operations:
-			out, rotated_gt = rotate_by_z_axis(out, self.rotate_nbins)
-		if "noise" in self.operations:
-			noise = torch.randn_like(out) * math.sqrt(self.noise_variance)
-			out = out + noise
-		if rotated_gt is None:
-			return out
-		return out, rotated_gt
-
-
 def rotate_by_z_axis(batch_data: torch.Tensor, nbins: int = 8):
 	device = batch_data.device
 	angle_bins = (
@@ -94,6 +52,7 @@ class OrientationAligner(nn.Module):
 		self,
 		orient_dims=None,
 		angle_bins: int = 8,
+		enabled: bool = True,
 		angle_weight: float = 0.4,
 		domain_weight: float = 1.0,
 		device: Optional[torch.device] = None,
@@ -101,6 +60,7 @@ class OrientationAligner(nn.Module):
 		super().__init__()
 		if orient_dims is None:
 			orient_dims = [3, 64, 128, 256]
+			self.enabled = enabled
 		self.angle_bins = angle_bins
 		self.angle_weight = angle_weight
 		self.domain_weight = domain_weight
@@ -112,13 +72,6 @@ class OrientationAligner(nn.Module):
 			latent_dim=256,
 			mlps=[256, 128, 128],
 			num_class=angle_bins,
-		)
-
-		self.src_aug = DataAugment(operations=["noise"], noise_variance=0.0001)
-		self.tgt_aug = DataAugment(
-			operations=["rotate", "noise"],
-			rotate_nbins=angle_bins,
-			noise_variance=0.0001,
 		)
 		self.domain_loss = FocalLoss(class_num=2, gamma=3)
 
@@ -148,15 +101,15 @@ class OrientationAligner(nn.Module):
 		target: torch.Tensor,
 		mode: str = "train",
 	) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]:
-		source_aug = source
+		if not self.enabled:
+			return source, target, torch.zeros(1, device=source.device), torch.zeros(1, device=source.device)
 		target_aug = target
-		rotated_gt = None
+		rotated_gt: Optional[torch.Tensor] = None
 		if mode in {"train", "val"}:
-			source_aug = self.src_aug(source)
-			target_aug, rotated_gt = self.tgt_aug(target)
+			target_aug, rotated_gt = rotate_by_z_axis(target, self.angle_bins)
 
 		outputs_clean = self.orientnet(source, target)
-		outputs_aug = self.orientnet(source_aug, target_aug)
+		outputs_aug = self.orientnet(source, target_aug)
 
 		angle_index = outputs_clean["angle_x"].argmax(dim=-1)
 		source_aligned = self.rotate_point_cloud_by_angle(source, angle_index)

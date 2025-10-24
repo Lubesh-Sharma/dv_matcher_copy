@@ -87,15 +87,19 @@ def eval_net(cfg):
 
     orient_model_path = 'ckpt/' + cfg["expname"]+ '/orient_ep_val_best.pth'
     orient_cfg = cfg.get("orientation", {})
-    orientation_aligner = OrientationAligner(
-        orient_dims=orient_cfg.get("dims", [3, 64, 128, 256]),
-        angle_bins=orient_cfg.get("angle_bins", 8),
-        angle_weight=orient_cfg.get("angle_lambda", 0.4),
-        domain_weight=orient_cfg.get("domain_lambda", 1.0),
-    ).to(device)
-    if os.path.exists(orient_model_path):
-        orientation_aligner.load_state_dict(torch.load(orient_model_path, map_location=device))
-    orientation_aligner.eval()
+    use_orientation = orient_cfg.get("enabled", True)
+    orientation_aligner = None
+    if use_orientation:
+        orientation_aligner = OrientationAligner(
+            orient_dims=orient_cfg.get("dims", [3, 64, 128, 256]),
+            angle_bins=orient_cfg.get("angle_bins", 8),
+            enabled=use_orientation,
+            angle_weight=orient_cfg.get("angle_lambda", 0.4),
+            domain_weight=orient_cfg.get("domain_lambda", 1.0),
+        ).to(device)
+        if os.path.exists(orient_model_path):
+            orientation_aligner.load_state_dict(torch.load(orient_model_path, map_location=device))
+        orientation_aligner.eval()
     use_norm = True
     upsampler = torch.hub.load("mhamilton723/FeatUp", 'dinov2', use_norm=use_norm).to(device)
     
@@ -113,7 +117,10 @@ def eval_net(cfg):
             else:
                 dino_feat1, dino_feat2 = None,None
             
-            verts1_aligned, verts2_aligned, _, _ = orientation_aligner(verts1, verts2, mode="test")
+            if use_orientation and orientation_aligner is not None:
+                verts1_aligned, verts2_aligned, _, _ = orientation_aligner(verts1, verts2, mode="test")
+            else:
+                verts1_aligned, verts2_aligned = verts1, verts2
             feat1, cfeats1 = point_backbone(verts1_aligned.permute(0,2,1), dino_feat1,upsampler)
             feat2, cfeats2 = point_backbone(verts2_aligned.permute(0,2,1), dino_feat2,upsampler)
             # feat1, cfeats1 = point_backbone(verts1.permute(0,2,1))
